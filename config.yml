@@ -1,0 +1,15 @@
+logging:
+  level: INFO
+  loggers:
+    br.ufal.ic: DEBUG
+
+ # Database settings.
+ database:
+ 	#Driver
+ 	driverClass: com.mysql.jdbc.Driver
+ 	#username
+ 	user: jvas
+ 	#password
+ 	password: mysql
+ 	#JDBC URL
+ 	url: jdbc:mysql://localhost:3306/DRCA
