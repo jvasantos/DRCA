@@ -3,13 +3,13 @@ logging:
   loggers:
     br.ufal.ic: DEBUG
 
- # Database settings.
- database:
- 	#Driver
- 	driverClass: com.mysql.jdbc.Driver
- 	#username
- 	user: jvas
- 	#password
- 	password: mysql
- 	#JDBC URL
- 	url: jdbc:mysql://localhost:3306/DRCA
+#Database settings
+database:
+    #Driver
+    driverClass: com.mysql.jdbc.Driver
+    #username
+    user: jvas
+    #password
+    password: 1234
+    #JDBC URL
+    url: jdbc:mysql://localhost:3306/drca

@@ -1,7 +1,6 @@
 package br.ufal.ic.drca.core;
 
 import java.util.List;
-import java.util.UUID;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -15,12 +14,11 @@ import org.hibernate.validator.constraints.NotBlank;
 @Entity
 @Table(name = "students")
 @NamedQueries({
-    @NamedQuery(name = "com.javaeeeee.dwstart.core.Employee.findAll",
-            query = "select e from Employee e"),
-    @NamedQuery(name = "com.javaeeeee.dwstart.core.Employee.findByName",
-            query = "select e from Employee e "
-            + "where e.firstName like :name "
-            + "or e.lastName like :name")
+    @NamedQuery(name = "br.ufal.ic.drca.core.Student.findAll",
+            query = "select e from Student e"),
+    @NamedQuery(name = "br.ufal.ic.drca.core.Student.findByName",
+            query = "select e from Student e "
+            + "where e.name like :name ")
 })
 public class Student {
 		
